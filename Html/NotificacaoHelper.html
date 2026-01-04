@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Notificação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .card {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .card-inner {
+            padding: 32px 32px 28px 32px;
+        }
+
+        .logo-row {
+            text-align: left;
+            padding-bottom: 20px;
+        }
+
+            .logo-row img {
+                max-height: 45px;
+				
+            }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #202124;
+            margin: 0 0 20px 0;
+        }
+
+        .content-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .text-col {
+            width: 55%;
+            vertical-align: top;
+            padding-right: 16px;
+            font-size: 14px;
+            color: #3c4043;
+            line-height: 1.5;
+        }
+
+        .image-col {
+            width: 45%;
+            vertical-align: top;
+            text-align: center;
+        }
+
+            .image-col img {
+                width: 50px;
+                height: 100%;
+                border-radius: 8px;
+            }
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: #9aa0a6;
+            padding: 18px 32px 8px 32px;
+        }
+
+        @media only screen and (max-width:600px) {
+            .card-inner {
+                padding: 20px 18px 16px 18px;
+            }
+
+            .content-table, .text-col, .image-col {
+                display: block;
+                width: 100% !important;
+            }
+
+            .text-col {
+                padding-right: 0;
+                padding-bottom: 16px;
+            }
+
+            .btn-row {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-inner">
+                <!-- Logo -->
+                <div class="logo-row">
+                    <img src="https://github.com/DevsBitencourt/Imagens/blob/main/devxcode.png?raw=true" alt="DevXCode Notificação">
+                </div>
+
+                <!-- Título -->
+                <h1 class="title">Notificação</h1>
+
+                <!-- Conteúdo em duas colunas -->
+                <table class="content-table" role="presentation">
+                    <tr>
+                        <td class="text-col"><p>{{CORPO_REQUISICAO}}</p></td>
+                    </tr>
+                </table>
+                <!-- Texto adicional -->
+                <div style="margin-top:24px; font-size:13px; color:#5f6368;">
+                    <p>Para ficar sempre protegido, ative o recurso de conexão automática no aplicativo.</p>
+                    <p>Fique seguro!<br>A equipe da Sua Empresa</p>
+                </div>
+            </div>
+
+           
+        </div>
+		 <!-- Rodapé simples -->
+            <div class="footer">
+                <p>Essa é uma mensagem automática, por favor não responda.</p>
+            </div>
+    </div>
+</body>
+</html>
